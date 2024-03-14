@@ -9,9 +9,9 @@ type errorType = {
 };
 
 export default function FormProduct({ getDataForm }: any) {
-    const [title, setTitle] = useState('');
+    const [title, setTitle] = useState('Default');
     const [price, setPrice] = useState(0);
-    const [description, setDescription] = useState('');
+    const [description, setDescription] = useState('Default hahaha');
     const [category] = useState('electronic');
     const [image] = useState('https://www.flowbite-react.com/images/products/apple-watch.png');
     const [error, setError] = useState<errorType>({

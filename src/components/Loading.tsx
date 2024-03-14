@@ -4,7 +4,7 @@ const Loading = () => {
     return (
         <div>
             <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
-                {[...Array(9)].map((_, index) => (
+                {[...Array(20)].map((_, index) => (
                     <div
                         role="status"
                         className="max-w-sm animate-pulse rounded border border-gray-200 p-4 shadow dark:border-gray-700 md:p-6"

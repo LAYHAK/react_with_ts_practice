@@ -22,7 +22,7 @@ const App = () => {
 
     useEffect(() => {
         setStatus('loading'); // [2]
-        fetch('https://fakestoreapi.com/product')
+        fetch('https://fakestoreapi.com/products')
             .then((response) => response.json())
             .then((data) => {
                 setStatus('success'); // [3]
@@ -87,7 +87,7 @@ const App = () => {
                         //loop 8 times
                         <Loading />
                     ) : status === 'error' ? (
-                        <div className="flex h-dvh items-center justify-center">
+                        <div className="flex h-[80vh] items-center justify-center">
                             <h1 className="text-6xl font-bold capitalize text-red-500">
                                 No Data to show
                             </h1>
